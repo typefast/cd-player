@@ -18,6 +18,7 @@ class PlayList
   end
   
   def viewList
+    puts "PlayList:"
     @playlist.each do |song|
       puts "#{song.name} by #{song.artist}"
     end
@@ -33,6 +34,9 @@ playlist = PlayList.new
 playlist.addSong(song)
 playlist.addSong(song1)
 playlist.viewList
+playlist.removeLast
+playlist.viewList
+
 
 
 
