@@ -26,6 +26,11 @@ class PlayList
     @playlist.each do |song|
       puts "#{song.name} by #{song.artist}"
     end
+    puts "\n"
+  end
+  
+  def list
+    @playlist
   end
   
 end
