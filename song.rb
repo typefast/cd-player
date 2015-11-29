@@ -1,4 +1,5 @@
 class Song 
+  attr_reader :name, :artist, :length
   def initialize(name, artist, length)
     @name = name
     @artist = artist
@@ -10,5 +11,3 @@ class Song
   end
 end
 
-song = Song.new('The Nights', 'Avicii', 3)
-song.to_s
