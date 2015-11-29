@@ -13,6 +13,10 @@ class PlayList
     @playlist.push(song)
   end
   
+  def removeFirst
+    @playlist.shift
+  end
+  
   def removeLast
     @playlist.pop
   end
@@ -26,16 +30,6 @@ class PlayList
   
 end
 
-
-song = Song.new('The Nights', 'Avicii', 3)
-song1 = Song.new('Tribute', 'Tenacious D', 4.5)
-
-playlist = PlayList.new
-playlist.addSong(song)
-playlist.addSong(song1)
-playlist.viewList
-playlist.removeLast
-playlist.viewList
 
 
 
